@@ -1,0 +1,64 @@
+.mobile-menu{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-secondary-white);
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+    
+    &__logo{
+        margin: 16px 0 0 16px;
+    }
+    
+    &__list{
+        margin: 32px 0 0 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    &__link{
+        color: var(--color-body-text);
+        font-weight: 400;
+        text-decoration: none;
+        &:hover{
+            color: var(--color-brand-light);
+            font-weight:500;
+        }
+    }
+
+    &__btn-close {
+        background: transparent;
+        border: none;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 16px;
+        right: 24px;
+    
+        &::before,
+        &::after {
+            position: absolute;
+            top: 16px;
+            right: 0;
+            content: '';
+            width: 24px;
+            height: 2px;
+            background-color: var(--color-body-text);
+        }
+    
+        &::before {
+            transform: rotate(45deg);
+        }
+    
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+
+    &.is-open {
+            transform: translateX(0);
+    }
+}

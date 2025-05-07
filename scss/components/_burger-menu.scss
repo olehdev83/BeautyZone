@@ -1,0 +1,35 @@
+.burger-menu {
+    padding: 0;
+    width: 30px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    border: none;
+    background: transparent;
+
+    span {
+        width: 80%;
+        height: 2px;
+        background-color: var(--color-body-text);
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        background-color: var(--color-body-text);
+        height: 2px;
+        position: absolute;
+    }
+
+    &::before {
+        width: 60%;
+        top: 0;
+    }
+
+    &::after {
+        width: 40%;
+        bottom: 0;
+    }
+}
