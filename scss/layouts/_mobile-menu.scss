@@ -13,7 +13,7 @@
     }
     
     &__list{
-        margin: 32px 0 0 16px;
+        margin: 32px 0 32px 16px;
         display: flex;
         flex-direction: column;
         gap: 16px;
@@ -58,6 +58,10 @@
         }
     }
 
+    &__social{
+        margin-left: 16px;
+    }
+    
     &.is-open {
             transform: translateX(0);
     }
