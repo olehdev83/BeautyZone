@@ -9,3 +9,10 @@
         }
     }
 }
+
+@media screen and (min-width: $bp-tablet) {
+    .social{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
