@@ -1,0 +1,38 @@
+.hero{
+    background: linear-gradient(
+    127deg, 
+    rgba(18, 18, 17, 0.78) 0%, 
+    rgba(18, 18, 17, 0.6) 63.89%, 
+    rgba(18, 18, 17, 0) 100%),
+    url('../images/bg-hero.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 160px 0 48px 0;
+
+    &__title{
+        color:  var(--color-primary-light);
+        font-size: 67px;
+        font-weight: 900;
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    &__button{
+        display: block;
+        margin: 48px auto auto;
+    }
+}
+
+@media screen and (min-width: $bp-desktop) {
+    .hero{
+        padding: 272px 0;
+
+        &__title{
+            font-size: 120px;
+        }
+        &__button{
+            display: none;
+        }
+    }
+}

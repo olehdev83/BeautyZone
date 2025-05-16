@@ -1,0 +1,11 @@
+.social{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    &__icon{
+        transition: all 0.3s ease;
+        &:hover {
+            fill: var(--color-brand-light);
+        }
+    }
+}
