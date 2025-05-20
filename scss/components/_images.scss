@@ -1,0 +1,44 @@
+.images{
+   display: none;
+}
+
+@media screen and (min-width: $bp-desktop) {
+    .images {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 40px;
+    
+        &__client {
+            box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.2);
+            border-radius: 50%;
+    
+            &-left {
+                margin-left: 50px;
+            }
+        }
+    
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            background-repeat: no-repeat;
+        }
+    
+        &::before {
+            width: 40px;
+            height: 40px;
+            background-image: url('/images/icons/star_littel_icon.svg');
+            top: 0;
+            left: 130%;
+        }
+    
+        &::after {
+            width: 56px;
+            height: 56px;
+            background-image: url('/images/icons/star-icon.svg');
+            top: 53%;
+            left: 0;
+        }
+    }
+}
