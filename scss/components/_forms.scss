@@ -1,0 +1,37 @@
+.forms{
+    padding: 42px 21px;
+    background: var(--color-brand-dark);
+    border-radius: 32px;
+
+    &__title{
+        color: var(--color-secondary-light);
+        font-size: 19px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    &-field{
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (min-width: $bp-desktop) {
+    .forms {
+        padding: 48px 57px;
+        width: 423px;
+        height: 481px;
+        background: var(--color-brand-dark);
+        border-radius: 32px;
+    
+        &__title {
+            color: var(--color-secondary-light);
+            font-size: 22px;
+            font-weight: 600;
+            text-align: center;
+        }
+    
+        &-field {
+            margin-bottom: 16px;
+        }
+    }  
+}
