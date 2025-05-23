@@ -26,6 +26,7 @@
 @media screen and (min-width: $bp-tablet) {
     .procedures {
         &__container {
+            max-width: 70%;
             overflow: hidden;
         }
         
@@ -45,3 +46,26 @@
         }
     }
 }
+
+@media screen and (min-width: $bp-tablet){
+    .procedures {
+            &__container {
+                overflow: hidden;
+            }
+    
+            &__slider {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 16px;
+            }
+    
+            &__list {
+                margin-bottom: 32px;
+            }
+    
+            &__button {
+                display: flex;
+            }
+        }
+    }

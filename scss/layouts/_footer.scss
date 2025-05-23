@@ -1,34 +1,10 @@
 .footer{
     padding: 32px 0;
-    background: url('../images/bg-footer.png');
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-brand-dark);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
-
-    &::before, 
-    &::after{
-        background-repeat: no-repeat;
-        content: '';
-        position: absolute;
-        bottom: 0;
-    }
-
-    &::before{
-        background-image: url('../images/decor_footer_bread_mobile-left.png');
-        width: 85px;
-        height: 206px;
-        top: 20px;
-        left: 0;
-    }
-
-    &::after{
-        background-image: url('../images/decor_footer_bread_mobile-right.png');
-        width: 102px;
-        height: 91px;
-        right: 0;
-    }
 
     &__container{
         display: flex;
@@ -44,6 +20,12 @@
         gap: 20px;
     }
 
+    &__address{
+        &-list{
+            display: none;
+        }
+    }
+
     &__logo{
         flex-grow: 1;
     }
@@ -55,10 +37,11 @@
     &__menu a,
     &__address-link{
         padding-bottom: 16px;
+        color: var(--color-secondary-light);
     }
 
     &__address-link{
-        color: var(--color-primary-light);
+        color: var(--color-secondary-light);
         font-size: 14px;
         font-weight: 300;
         text-decoration: none;
@@ -73,7 +56,7 @@
     }
 
     &__social-icon{
-        fill: var(--color-primary-light);
+        fill: var(--color-secondary-light);
         &:hover{
             fill: var(--color-brand-light);
         }
@@ -89,34 +72,23 @@
     
     .footer {
         padding: 32px 0;
-        background: url('../images/bg-footer.png');
-        background-color: var(--color-primary-dark);
+        background-color: var(--color-brand-dark);
         background-position: center top;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
 
-        &::before,
-        &::after {
+        &::before {
+            background-image: url('../images/footer-images.png');
             background-repeat: no-repeat;
             background-size: cover;
             content: '';
             position: absolute;
             bottom: 0;
-        }
 
-        &::before {
-            background-image: url('../images/decor_footer_bread-left.png');
             width: 180px;
             height: 120px;
             top: 52%;
-            left: 0;
-        }
-
-        &::after {
-            background-image: url('../images/decor_footer_bread-right.png');
-            width: 380px;
-            height: 190px;
             right: 0;
         }
 
@@ -147,15 +119,17 @@
 
         &__address-list {
             max-width: 277px;
+            display: block;
         }
 
         &__menu a,
         &__address-link {
             padding-bottom: 16px;
+            color: var(--color-secondary-light);
         }
 
         &__address-link {
-            color: var(--color-primary-light);
+            color: var(--color-secondary-light);
             font-size: 16px;
             font-weight: 300;
             text-decoration: none;
@@ -172,7 +146,7 @@
         }
 
         &__social-icon {
-            fill: var(--color-primary-light);
+            fill: var(--color-secondary-light);
 
             &:hover {
                 fill: var(--color-brand-light);
@@ -180,7 +154,7 @@
         }
 
         &__address-copyright {
-            color: #A18268;
+            color: var(--color-secondary-nickel);
             font-size: 14px;
         }
     }

@@ -2,9 +2,9 @@
     padding-top: 56px;
     &__container{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
-        gap: 32px;
+        gap: 23px;
     }
 
     &__title{
@@ -12,10 +12,10 @@
     }
 
     &__map{
+        margin: 0 -13px;
         height: 481px;
         flex-shrink: 0;
         border: none;
-        border-radius: 32px;
     }
 
     &__button{
@@ -26,6 +26,7 @@
 @media screen and (min-width: $bp-desktop) {
     .contacts {
         padding-top: 56px;
+        padding-bottom: 16px;
     
         &__container {
             display: flex;
@@ -47,7 +48,8 @@
 @media screen and (min-width: $bp-tablet) {
     .contacts {
         padding-top: 56px;
-    
+        padding-bottom: 16px;
+        
         &__container {
             display: flex;
             flex-direction: row-reverse;
