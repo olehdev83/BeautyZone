@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(1, 31, 74, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,17 +18,33 @@
 .modal{
     padding: 100px 15px;
     width: 100%;
-    max-width: 880px;
-    max-height: 880px;
-    background-color: var(--color-primary-light);
+    max-width: 723px;
+    max-height: 681px;
+    background-color: var(--color-brand-dark);
     border-radius: 32px;
     overflow-y: auto;
     position: relative;
-    &__title{
-        margin-bottom: 8px;
-        font-size: 30px;
-        text-align: center;
+
+    &__title,
+    &__subtitle {
+        color: var(--color-secondary-light);
     }
+
+    &__title {
+        margin: 0 auto;
+        max-width: 50%;
+        font-size: 30px;
+        text-align: center
+    }
+
+    &__subtitle {
+        max-width: 100%;
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+        margin: 40px auto 32px auto;
+    }
+    
     &__text{
         margin-bottom: 50px;
         font-size: 14px;
@@ -49,8 +65,8 @@
         background: transparent;
         border: none;
         position: absolute;
-        top: 50px;
-        right: 50px;
+        top: 20px;
+        right: 30px;
         &::before,
         &::after{
             position: absolute;
@@ -59,7 +75,7 @@
             content: '';
             width: 30px;
             height: 2px;
-            background: var(--color-primary-dark);
+            background: var(--color-secondary-light);
         }
         &::before{
             transform: rotate(45deg);
@@ -78,7 +94,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(1, 31, 74, 0.8);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -93,20 +109,32 @@
     .modal {
         padding: 128px;
         width: 100%;
-        max-width: 880px;
-        max-height: 880px;
-        background-color: var(--color-primary-light);
+        min-width: 723px;
+        background-color: var(--color-brand-dark);
         border-radius: 32px;
         overflow-y: auto;
         position: relative;
+
+        &__title,
+        &__subtitle {
+            color: var(--color-secondary-light);
+        }
+
         &__title {
-            margin-bottom: 8px;
+            max-width: 60%;
+            font-family: "Play", sans-serif;
+            color: var(--color-secondary-light);
+            font-size: 64px;
+            font-weight: 700;
             text-align: center;
         }
-    
-        &__text {
-            margin-bottom: 72px;
+
+        &__subtitle {
+            max-width: 61%;
+            font-size: 22px;
+            font-weight: 600;
             text-align: center;
+            margin: 40px auto 32px auto;
         }
     
         &__form-fiald {
@@ -135,7 +163,7 @@
                 content: '';
                 width: 24px;
                 height: 2px;
-                background: var(--color-primary-dark);
+                background: var(--color-secondary-light);
             }
     
             &::before {

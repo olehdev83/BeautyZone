@@ -103,7 +103,8 @@
         &__address {
             display: flex;
             flex-direction: row;
-            flex-basis: 50%;
+            flex-basis: 40%;
+            justify-content: center;
             gap: 20px;
         }
 

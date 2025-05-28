@@ -8,21 +8,39 @@
 }
 
 .privacy{
-    margin-top: 8px;
+    max-width: 100%;
+    margin: 0 auto;
     color: var(--color-secondary-nickel);
     font-size: 12px;
-    text-align: center;
     font-weight: 400;
+    text-align: center;
     &__link{
         color: var(--color-secondary-nickel);
     }
 }
+
 .rotated {
     transform: rotate(180deg);
 }
+
 .transition-all {
     transition: all 0.3s;
 }
+
 .scroll-block {
     overflow: hidden;
+}
+
+@media screen and (min-width: $bp-tablet) {
+    .privacy {
+        max-width: 50%;
+        margin: 0 auto;
+        color: var(--color-secondary-nickel);
+        font-size: 12px;
+        font-weight: 400;
+    
+        &__link {
+            color: var(--color-secondary-nickel);
+        }
+    }
 }
